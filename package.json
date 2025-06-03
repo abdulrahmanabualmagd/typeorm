@@ -1,0 +1,25 @@
+{
+    "name": "typeorm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "rimraf ./dist && tsc && node ./dist/main.js",
+        "sync": "rimraf ./dist && tsc && npx typeorm schema:sync -d 'dist/config/db.js'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "pg": "^8.16.0",
+        "reflect-metadata": "^0.2.2",
+        "rimraf": "^6.0.1",
+        "typeorm": "^0.3.24"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.29",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    }
+}

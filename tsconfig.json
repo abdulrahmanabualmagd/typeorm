@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                       // modern enough for decorators and async/await
+    "module": "nodenext",                     // use Node.js native ES modules support
+    "rootDir": "./src",                       // source files location
+    "outDir": "./dist",                       // compiled JS output folder
+    // "strict": true,                           // enable all strict type checking options
+    "experimentalDecorators": true,           // enable decorator syntax
+    "emitDecoratorMetadata": true,            // emit metadata for decorators (required by TypeORM)
+    "esModuleInterop": true,                   // allows default imports from CommonJS
+    "moduleResolution": "nodenext",            // resolve modules like Node.js with ES modules
+    "forceConsistentCasingInFileNames": true,  // enforce consistent file casing
+    "skipLibCheck": true                        // skip type checking for dependencies (speeds up build)
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
