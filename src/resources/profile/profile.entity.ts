@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import { User } from "../user/user.entity.ts";
+import { User } from "../user/user.entity";
 import { Post } from "../post/post.entity";
 import { Comment } from "../comment/comment.entity";
 
